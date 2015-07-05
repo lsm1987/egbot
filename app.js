@@ -22,3 +22,6 @@ app.listen(port, function () {
 
 var hellobot = require('./hellobot');
 app.post('/hello', hellobot);
+
+var dicebot = require('./dicebot');
+app.post('/roll', dicebot);
